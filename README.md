@@ -1,2 +1,3 @@
 # face-interpolation
-Face interpolation
+Notes:
+- Currently prototyping locally with MNIST
