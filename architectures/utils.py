@@ -37,7 +37,7 @@ class NormalizeImage:
     return (_image - mean)/std
 
   
-mnist_transform = transforms.Compose([transforms.ToTensor(), NormalizeImage()])
+mnist_transform = transforms.Compose([transforms.ToTensor()])
 mnist_training_set = tv.datasets.MNIST(root = './data', train = True, download = True, transform=mnist_transform)
 
 def get_recreated_image(model, img):
